@@ -9,11 +9,10 @@ import { Button } from '../components/Button/index'
 import '../styles/auth.scss';
 import { database } from '../services/firebase'
 import { useAuth } from '../hooks/useAuth'
-// import { useAuth } from '../hooks/useAuth'
 
 export function NewRoom() {
 
-    const { user, signInWithGoogle } = useAuth();
+    const { user } = useAuth();
     const history = useHistory();
     const [newRoom, setNewRoom] = useState('');
 
